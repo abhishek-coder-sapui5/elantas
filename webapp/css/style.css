@@ -1,0 +1,14 @@
+.toolBarColor {
+    background-color: #3399cc !important;
+}
+.textColor {
+	color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 3%;
+}
+.tableWidth{
+	padding-right: 10px;
+}
+#columnColor{
+	background-color: #3399cc !important;
+}

@@ -1,0 +1,736 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	controllerName="com.sap.build.standard.untitledPrototype.controller.Page1" 
+	xmlns="sap.m"
+	xmlns:t="sap.ui.table"
+	xmlns:core="sap.ui.core" 
+	xmlns:layout="sap.ui.layout" 
+	xmlns:layout1="sap.ui.commons.layout">
+	<Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+		<content>
+			<layout1:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout1:positions>
+					<layout1:PositionContainer left="25px" top="105px">
+						<layout1:control>
+							<Label text="Company Code :" design="Bold" width="146.375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="175px" top="97px">
+						<layout1:control>
+							<ComboBox placeholder="Company code"  editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Ceylinco Life Insurance" enabled="true" key="Ceylinco Life Insurance"/>
+									<core:Item text="Investment Management" enabled="true" key="Investment Management"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="465px" top="105px">
+						<layout1:control>
+							<Label text="Mandate Date :" design="Bold" width="148.09375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="600px" top="97px">
+						<layout1:control>
+							<DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+								valueFormat="yyyyMMdd"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="885px" top="105px">
+						<layout1:control>
+							<Label text="Mandate Number :" design="Bold" width="200px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1025px" top="97px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="150px">
+						<layout1:control>
+							<Label text="Product Type :" design="Bold" width="140.15625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="175px" top="143px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="T-Bills" enabled="true" key="T-Bills"/>
+									<core:Item text="T-Bond" enabled="true" key="T-Bond"/>
+									<core:Item text="Pref redee" enabled="true" key="Pref redee"/>
+									<core:Item text="Pref Conv" enabled="true" key="Pref Conv"/>
+									<core:Item text="Sri Dev Bo" enabled="true" key="Sri Dev Bo"/>
+									<core:Item text="Borrow BK" enabled="true" key="Borrow BK"/>
+									<core:Item text="Rep Borrow" enabled="true" key="Rep Borrow"/>
+									<core:Item text="Rev Repo" enabled="true" key="Rev Repo"/>
+									<core:Item text="Fixed Dep" enabled="true" key="Fixed Dep"/>
+									<core:Item text="Equity" enabled="true" key="Equity"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="465px" top="150px">
+						<layout1:control>
+							<Label text="Price Type :" design="Bold" width="107.15625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="600px" top="143px">
+						<layout1:control>
+							<ComboBox placeholder="LIMIT PRICE" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="885px" top="150px">
+						<layout1:control>
+							<Label text="Trans Type :" design="Bold" width="127px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1025px" top="143px">
+						<layout1:control>
+							<ComboBox placeholder="" editable="true" enabled="true" visible="true" width="173px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="195px">
+						<layout1:control>
+							<Label text="Underlying Product :" design="Bold" width="138.609375px" required="false" textAlign="Begin" textDirection="Inherit"
+								visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="175px" top="189px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="465px" top="195px">
+						<layout1:control>
+							<Label text="Full Redemption :" design="Bold" width="255.15625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="592px" top="189px">
+						<layout1:control>
+							<CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false"
+								useEntireWidth="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="315px">
+						<layout1:control>
+							<Label text="Security ID :" design="Bold" width="136.375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="160px" top="308px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="990px" top="315px">
+						<layout1:control>
+							<Label text="Broker :" design="Bold" width="129px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1113px" top="308px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="685px" top="315px">
+						<layout1:control>
+							<Label text="Fund :" design="Bold" width="108.609375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="792px" top="308px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="365px" top="315px">
+						<layout1:control>
+							<Label text="Fund Category :" design="Bold" width="152.765625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="485px" top="308px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="355px">
+						<layout1:control>
+							<Label text="Counter Party :" design="Bold" width="138.609375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="160px" top="349px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="685px" top="355px">
+						<layout1:control>
+							<Label text="Interest Rate :" design="Bold" width="109.609375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="792px" top="349px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="990px" top="355px">
+						<layout1:control>
+							<Label text="Valuation Class :" design="Bold" width="130.375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1113px" top="349px">
+						<layout1:control>
+							<ComboBox editable="true" enabled="true" visible="true" width="150px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+									<core:Item text="Item" enabled="true" key="Item"/>
+								</items>
+							</ComboBox>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="364px" top="355px">
+						<layout1:control>
+							<Label text="Tenure :" design="Bold" width="152.765625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="485px" top="349px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="396px">
+						<layout1:control>
+							<Label text="Nominal Amount :" design="Bold" width="162.546875px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="160px" top="390px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="364px" top="396px">
+						<layout1:control>
+							<Label text="Price :" design="Bold" width="112.375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="485px" top="390px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="685px" top="396px">
+						<layout1:control>
+							<Label text="Yield :" design="Bold" width="106.609375px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="792px" top="390px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="990px" top="396px">
+						<layout1:control>
+							<Label text="Quantity :" design="Bold" width="107.15625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1113px" top="390px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="25px" top="438px">
+						<layout1:control>
+							<Label text="End Date :" design="Bold" width="135px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="160px" top="431px">
+						<layout1:control>
+							<DatePicker width="150px" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+								valueFormat="yyyyMMdd"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="364px" top="438px">
+						<layout1:control>
+							<Label text="Notice Period :" design="Bold" width="127.15625px" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="485px" top="432px">
+						<layout1:control>
+							<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="150px" valueHelpOnly="false" required="false"
+								valueStateText="Invalid entry" maxLength="0"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1113px" top="432px">
+						<layout1:control>
+							<Button text="Allocate" type="Emphasized" iconFirst="true" width="150px" enabled="true" visible="true" iconDensityAware="false"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="10px" top="565px">
+						<layout1:control>
+							<ScrollContainer  width="100%" horizontal="true" vertical="true" focusable="true">
+							<t:Table class="tableWidth">
+								<t:columns>
+									<t:Column id="securityId" width="11rem" tooltip="Security ID">
+										<Label text="Security ID" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="securityName" width="11rem" tooltip="Security Name">
+										<Label text="Security Name" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="Trans" width="11rem" tooltip="Trans Type">
+										<Label text="Trans Type" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="Fund" width="11rem" tooltip="Fund">
+										<Label text="Fund" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="Fundname" width="11rem" tooltip="Fund Name">
+										<Label text="Fund Name" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="quantity" width="11rem" tooltip="Quantity">
+										<Label text="Quantity" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="nominal" width="11rem" tooltip="Nominal">
+										<Label text="Nominal" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="price" width="11rem" tooltip="Price">
+										<Label text="Price" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="yield" width="11rem" tooltip="Yield">
+										<Label text="Yield" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="tradeamount" width="11rem" tooltip="Trade Amount">
+										<Label text="Trade Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="spotRate" width="11rem" tooltip="Spot Rate">
+										<Label text="Spot Rate" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="intRate" width="11rem" tooltip="Interest Rate">
+										<Label text="Int. Rate" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="icm" width="11rem" tooltip="ICM">
+										<Label text="ICM" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="frwdName" width="11rem" tooltip="Forward Name ">
+										<Label text="Frwd. Name" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="counterParty" width="11rem" tooltip="Counter Party">
+										<Label text="Counter Party" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="broker" width="11rem" tooltip="Broker">
+										<Label text="Broker" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="exchange" width="11rem" tooltip="Exchange">
+										<Label text="Exchange" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="settCat" width="11rem" tooltip="Settlement Category">
+										<Label text="Sett Cat." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="SettAmt" width="11rem" tooltip="Settlement Amount">
+										<Label text="Sett Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="accrIntAmt" width="11rem" tooltip="Accured Interest Amount">
+										<Label text="Accr Int Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="marketPrice" width="11rem" tooltip="Market Price">
+										<Label text="Market Price" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="frwdAccrAmt" width="11rem" tooltip="Forward Accured Amount">
+										<Label text="Frwd Accur Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="saleable" width="11rem" tooltip="Saleable Quantity">
+										<Label text="Saleable Qnt." textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="holdingQnt" width="11rem" tooltip="Holding Quantity">
+										<Label text="Holding Qnt." textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="calcDate" width="11rem" tooltip="Calculation Date">
+										<Label text="Calc. Date" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="payDate" width="11rem" tooltip="Pay Date">
+										<Label text="Pay Date" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="valClass" width="11rem" tooltip="Valuation Class">
+										<Label text="Val. Class" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="FundCat" width="11rem" tooltip="Fund Category">
+										<Label text="Fund Cat." textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="posDate" width="11rem" tooltip="Position Date">
+										<Label text="Pos. Date" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="endDate" width="11rem" tooltip="End Date">
+										<Label text="End Date" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="refIntRate" width="11rem" tooltip="Reference Interest Rate">
+										<Label text="Ref. Int. Rate" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="hairCut" width="11rem" tooltip="Hair Cut">
+										<Label text="Hair Cut" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="intFrq" width="11rem" tooltip="Interest Frequency">
+										<Label text="Int. Frq." textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="intCat" width="11rem" tooltip="Interest Category">
+										<Label text="Int. Cat." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="IntAmt" width="11rem" tooltip="Interest Amount">
+										<Label text="Int. Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="np" width="11rem" tooltip="Notice Period">
+										<Label text="NP" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="coupon" width="11rem" tooltip="Coupon">
+										<Label text="Coupon" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="faceval" width="11rem" tooltip="Face Value">
+										<Label text="Face Val." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="secAcc" width="11rem" tooltip="Security Account">
+										<Label text="Sec. Acc." textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="brokerAmt" width="11rem" tooltip="Brokerage Amount">
+										<Label text="Brkg. Amt" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="netPay" width="11rem" tooltip="Net Payment">
+										<Label text="Net Pay" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="payAmt" width="11rem" tooltip="Pay Amount">
+										<Label text="Pay Amount" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="arrangerFee" width="11rem" tooltip="Arranger Fee">
+										<Label text="Arranger Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="placementFee" width="11rem" tooltip="Placement Fee">
+										<Label text="Placement Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="stampDutyFee" width="11rem" tooltip="Stamp Duty Fee">
+										<Label text="Stamp Duty Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="custodianFee" width="11rem" tooltip="Custodian Fee">
+										<Label text="Frwd Accur Amt." textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="trusteeFee" width="11rem" tooltip="Trustee Fee">
+										<Label text="Trustee Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="upFrontFee" width="11rem" tooltip="Up Front Fee">
+										<Label text="Up Front Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="redemptionFee" width="11rem" tooltip="Redemption Fee">
+										<Label text="Redemption Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="structFee" width="11rem" tooltip="Stucturing Fee">
+										<Label text="Struct. Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="bla"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="docfee" width="11rem" tooltip="Documentation Fee">
+										<Label text="Documentation Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="otherFixedFeeExp" width="11rem" tooltip="Other Fixed Fee (Exps)">
+										<Label text="Other Fixed Fee (Exps)" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="otherFixedFeeCap" width="11rem" tooltip="Other Fixed Fee (Capitalize)">
+										<Label text="Other Fixed Fee (Capitalize)" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="cseseccdsFee" width="11rem" tooltip="CSE SEC CDS Fee">
+										<Label text="CSE SEC CDS Fee" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="shareTransactionLevy" width="11rem" tooltip="Share Transaction Levy">
+										<Label text="Share Transaction Levy" textAlign="Center"/>
+										<t:template>
+											<Text text="Pernr"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="nbtCharges" width="11rem" tooltip="N.B.T Charges">
+										<Label text="N.B.T Charges" textAlign="Center"/>
+										<t:template>
+											<Text text="Name"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="vat" width="11rem" tooltip="VAT">
+										<Label text="VAT" textAlign="Center"/>
+										<t:template>
+											<Text text="Ddtext"/>
+										</t:template>
+									</t:Column>
+									<t:Column id="spread" width="11rem" tooltip="Benchmark Rate">
+										<Label text="Spread" textAlign="Center"/>
+										<t:template>
+											<Text text="NoticeText"/>
+										</t:template>
+									</t:Column>
+								</t:columns>
+							</t:Table>
+							</ScrollContainer>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="5px" top="490px">
+						<layout1:control>
+							<OverflowToolbar width="1258px" height="55px" class="toolBarColor" visible="true" enabled="true">
+								<content>
+									<Text text="DETAILED OVERVIEW" class="textColor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+										visible="true"/>
+									<ToolbarSpacer width=""/>
+									<Button text="" type="Default" icon="sap-icon://refresh" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Refresh"
+										iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Add"
+										iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://delete" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Delete"
+										iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://sys-cancel-2" iconFirst="true" width="auto" enabled="true" visible="true"
+										tooltip="Clear all records of table" iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://checklist-item-2" iconFirst="true" width="auto" enabled="true" visible="true"
+										tooltip="Check Table Entries" iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Save"
+										iconDensityAware="false"/>
+									<Button text="" type="Default" icon="sap-icon://drill-down" iconFirst="true" width="auto" enabled="true" visible="true"
+										tooltip="Fill Column" iconDensityAware="false"/>
+								</content>
+							</OverflowToolbar>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="5px" top="15px">
+						<layout1:control>
+							<OverflowToolbar width="1256px" height="55px" class="toolBarColor" visible="true" enabled="true">
+								<content>
+									<Text text="DEAL CREATION : INITIAL SCREEN" class="textColor" width="auto" maxLines="1" wrapping="false" textAlign="Begin"
+										textDirection="Inherit" visible="true"/>
+									<ToolbarSpacer width=""/>
+								</content>
+							</OverflowToolbar>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="5px" top="240px">
+						<layout1:control>
+							<OverflowToolbar width="1256px" height="55px" class="toolBarColor" visible="true" enabled="true">
+								<content>
+									<Text text="ALLOCATION" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"
+										class="textColor"/>
+									<ToolbarSpacer width=""/>
+									<Button text="" type="Default" icon="sap-icon://refresh" iconFirst="true" width="auto" enabled="true" visible="true"
+										iconDensityAware="false"/>
+								</content>
+							</OverflowToolbar>
+						</layout1:control>
+					</layout1:PositionContainer>
+				</layout1:positions>
+			</layout1:AbsoluteLayout>
+		</content>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>
